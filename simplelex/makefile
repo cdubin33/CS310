@@ -1,0 +1,5 @@
+lex: lex.o
+	g++ -o simplelex lex.o
+
+lex.o: lex.cc
+	g++ -c lex.cc

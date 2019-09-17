@@ -1,0 +1,16 @@
+\begin{tabular}{|l|l|}
+\hline
+expression & result\\
+\hline\hline
+\verb|range(1,7)| & \verb|[1, 2, 3, 4, 5, 6]|\\\hline
+\verb|[x for x in range(1,7) if x*x>10]| & \verb|[4, 5, 6]|\\\hline
+\verb|[2*x for x in range(1,7) if x*x>10]| & \verb|[8, 10, 12]|\\\hline
+\begin{minipage}{3in}
+(or in "Small\ntalk")
+\begin{Verbatim}
+((1 to: 6) select: [:x|x*x>10])
+					     collect: [:x|2*x]
+\end{Verbatim}
+\end{minipage}
+ & \verb|(8 10 12 )|\\\hline
+\end{tabular}
